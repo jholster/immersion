@@ -1,0 +1,92 @@
+#intro
+  padding 2em
+  color #fff
+  background #C8C5C0 url(bg.jpg) no-repeat 50% 20%
+  background-sizing cover
+
+  #features
+    li
+      font-size 1.25em
+      font-weight 200
+
+      &.tbd:after
+        content "TBD"
+        xbackground #fff
+        xcolor #766557
+        display inline-block
+        font-size .5em
+        font-weight bold
+        border-radius .5em
+        border 2px solid #fff
+        padding .25em .5em
+        -webkit-transform rotate(15deg)
+        -moz-transform rotate(15deg)
+        -ms-transform rotate(15deg)
+        transform rotate(15deg)
+        margin-left 1em
+        position relative
+        top -.5em
+
+  a
+    color #fee9d4
+
+    &:after
+      content ''
+      margin 0
+
+#title
+  font-size 6em
+
+#pitch
+  font-weight 800
+  text-transform none
+
+#showcase
+
+  article
+    padding 1em 0 4em 0
+    margin 2em
+    padding-left 300px
+    border-top 1px solid #3A4244
+
+    &:first-child
+      border-top none
+
+    > h2
+      float left
+      margin 0 0 0 -300px
+      text-transform uppercase
+      font-weight 100
+
+    section
+      padding .5em 0
+      padding-left 300px
+
+      &.fullwidth
+        padding-left 0
+
+    code
+      margin-left -300px
+      float left
+      text-align right
+      font-family menlo, monaco, monospace
+      font-size .75em
+      margin-top .75em
+      font-weight 100
+      text-transform none
+
+    textarea
+      width 300px
+      height 100px
+
+    > section > label
+      margin-right 2em
+
+#planets
+  :nth-child(2),
+  :nth-child(3)
+    text-align right  // numeric data
+
+body.modal-visible.show-modal-example-regular
+  #modal-example-regular
+    display flex

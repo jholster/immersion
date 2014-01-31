@@ -1,0 +1,313 @@
+<!doctype html>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Immersion – minimal, pure CSS3 framework">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+<title>Immersion – A minimal flexbox-based CSS framework</title>
+
+<link rel="stylesheet" href="immersion.css">
+<link rel="stylesheet" href="demo.css">
+
+<body>
+
+<div id="root">
+
+  <section class="row" id="intro">
+
+    <h1 id="title">Immersion</h1>
+
+    <h2 id="pitch">Minimal, modern, pure css³ UI library written in Stylus</h2>
+
+    <ul id="features">
+      <li>Styling & animations implemented fully in CSS – no javascript or bitmaps used</li>
+      <li>Scalable, retina-ready, no rendering delay, easy to customize</li>
+      <li>Gracefully degrating standard markup</li>
+      <li>Lightweight, only 2 KB minified & gzipped, source written in <a href="http://learnboost.github.io/stylus/">Stylus</a></li>
+      <li class="tbd">Comes in dark/light, flat/3d, square/rounded and multiple color variants</li>
+      <li class="tbd">Responsive <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Flexible_boxes">flex-based</a> grid – vertical alignment without hacks</li>
+      <li class="tbd">Targeted for modern browsers including IE10+ and mobile versions</li>
+    </ul>
+
+  </section>
+
+  <div id="showcase">
+
+    <article>
+
+      <h2>Modals</h2>
+
+      <section>
+        <code>&lt;aside class="modal"&gt;</code>
+        <button onclick="document.body.classList.toggle('modal-visible');">Show a modal</button>
+      </section>
+
+    </article>
+
+<!--     <article>
+
+      <h2>Grid</h2>
+
+      <div class="grid">
+        <div class="cell small-1 medium-2"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+    </article>
+ -->
+    <article>
+
+      <h2>Controls</h2>
+
+      <section>
+        <code>&lt;select&gt;</code>
+        <select>
+          <option selected>First option</option>
+          <option>Second option</option>
+          <option>Third option</option>
+        </select>
+        <label></label>
+      </section>
+
+      <section>
+        <code>&lt;input type="text"&gt;</code>
+        <input type="text" placeholder="Placeholder...">
+      </section>
+
+      <section>
+        <code>&lt;datalist&gt;</code>
+        <input type="text" placeholder="Type a color" list="datalist-colors">
+        <datalist id="datalist-colors">
+          <option>Amber</option>
+          <option>Blue</option>
+          <option>Green</option>
+          <option>Red</option>
+          <option>Yellow</option>
+          <option>Black</option>
+          <option>White</option>
+          <option>Cyan</option>
+          <option>Magenta</option>
+        </datalist>
+      </section>
+
+      <section>
+        <code>&lt;input type="search"&gt;</code>
+        <input type="search" placeholder="Search...">
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;input type="email"&gt;</code>
+          <input type="email" placeholder="Try validation"><label></label>
+        </label>
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;input type="number"&gt;</code>
+          <input type="number" value="42">
+        </label>
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;input type="date"&gt;</code>
+          <input type="date" placeholder="">
+        </label>
+      </section>
+
+      <section>
+        <code>&lt;input type="time"&gt;</code>
+        <input type="time" placeholder="hh:mm" pattern="[0-9]{1,2}:[0-9]{1,2}"><label></label>
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;input type="datetime-local"&gt;</code>
+          <input type="datetime-local" placeholder="mm.dd.yyyy">
+        </label>
+      </section>
+
+      <section>
+        <code>&lt;input type="radio"&gt;</code>
+        <label><input type="radio" name="radio" checked> First</label>
+        <label><input type="radio" name="radio"> Second</label>
+        <label><input type="radio" name="radio"> Third</label>
+      </section>
+
+      <section>
+        <div class="radio-slide">
+          <input id="radio-slide-1" type="radio" name="radio-slide" checked>
+          <label for="radio-slide-1">First</label>
+          <input id="radio-slide-2" type="radio" name="radio-slide">
+          <label for="radio-slide-2">Second</label>
+          <input id="radio-slide-3" type="radio" name="radio-slide">
+          <label for="radio-slide-3">Third</label>
+        </div>
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;input type="checkbox"&gt;</code>
+          <input type="checkbox" checked>
+          Check me
+        </label>
+      </section>
+
+      <section>
+
+        <label>
+          <input type="checkbox" class="switch">
+          Check me
+        </label>
+      </section>
+
+      <section>
+        <code>&lt;input type="range"&gt;</code>
+        <input type="range" min="1" max="500" step="1">
+      </section>
+
+      <section>
+        <code>&lt;progress&gt;</code>
+        <progress value="65" max="100">
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;textarea&gt;</code>
+          <textarea placeholder="Placeholder..."></textarea>
+        </label>
+      </section>
+
+      <section>
+        <label>
+          <code>&lt;input type="color"&gt;</code>
+          <input type="color" value="#E834AE">
+        </label>
+      </section>
+
+      <section>
+        <code>&lt;input type="file"&gt;</code>
+        <input type="file">
+      </section>
+
+      <section>
+        <code>&lt;button&gt;</code>
+        <button>Default</button>
+      </section>
+
+      <section>
+        <code>&lt;button class="alt"&gt;</code>
+        <button class="alt">Alternative</button>
+      </section>
+
+    </article>
+
+    <article>
+
+      <h2>Typography</h2>
+
+      <section class="fullwidth">
+
+        <h1>Default header 1</h1>
+
+        <p>Example of paragraph. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent <a href="#example-link">elementum hendrerit</a> tortor.</p>
+
+        <h2>Header 2, just an example</h2>
+
+        <p>Example of paragraph. Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a <a href="http://github.com/jholster/immersion">ullamcorper</a> laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus.</p>
+
+        <h3>Header 3...6, purely for inspiration</h3>
+
+      </section>
+
+    </article>
+
+    <article>
+
+      <h2>Misc</h2>
+
+      <section class="fullwidth">
+
+        <ul>
+          <li>An item in unordered list</li>
+          <li>Vestibulum auctor dapibus neque, suspendisse ac urna</li>
+          <li>Vivamus vestibulum nulla nec ante</li>
+        </ul>
+
+        <table id="planets">
+          <thead>
+            <th>Name</th>
+            <th>Distance</th>
+            <th>Gravity</th>
+            <th>Atmosphere</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mercury</td>
+              <td>57,909,175 km</td>
+              <td>3.70 m/s²</td>
+              <td>He  Na+  P+</td>
+            </tr>
+            <tr>
+              <td>Venus</td>
+              <td>108,208,930 km</td>
+              <td>8.87 m/s²</td>
+              <td>CO₂  N₂</td>
+            </tr>
+            <tr>
+              <td>Earth</td>
+              <td>149,597,890 km</td>
+              <td>9.81 m/s²</td>
+              <td>N₂  O₂</td>
+            </tr>
+            <tr>
+              <td>Mars</td>
+              <td>227,936,640 km</td>
+              <td>3.71 m/s²</td>
+              <td>CO₂  N₂  Ar</td>
+            </tr>
+            <tr>
+              <td>Jupiter</td>
+              <td>778,412,010 km</td>
+              <td>23.12 m/s²</td>
+              <td>H₂  He</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+
+    </article>
+
+  </div>
+
+</div>
+
+<aside class="modal" id="modal-example">
+  <div>
+    <span class="modal-close"></span>
+    <h2>Modal example</h2>
+    <p>Presently the light increased and a moment later, to my delight, I came upon a flight of steps leading upward, at the top of which the brilliant light of the noonday sun shone through an opening in the ground.</p>
+    <input type="checkbox" class="switch" id="modal-switch" checked>
+    <label for="modal-switch">Remember my choice</label>
+    <div>
+      <button class="alt">Cancel</button>
+      <button>Take action</button>
+    </div>
+  </div>
+</aside>
+
+<script>
+[].forEach.call(document.querySelectorAll('.modal'), function(modal) {
+  [].forEach.call(modal.querySelectorAll('.modal-close, button'), function(node) {
+    node.addEventListener('click', function() {
+      document.body.classList.remove('modal-visible');
+    });
+  });
+});
+</script>
+
+</body>
