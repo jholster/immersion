@@ -1,0 +1,7 @@
+section {
+  padding-left: 20em;
+}
+section h3 {
+  margin-left: -20em;
+  float: left;
+}
