@@ -56,13 +56,18 @@ user-select()
   vendor('user-select', arguments)
 
 justify-content()
-  vendor('justify-content', arguments)
+  justify-content arguments
+  -webkit-justify-content arguments
+  -ms-flex-pack arguments
 
 align-items()
-  vendor('align-items', arguments)
+  align-items arguments
+  -webkit-align-items arguments
+  -ms-flex-align arguments
 
 display(arg)
   if arg == 'flex'
+    display block // fallback
     display -webkit-flex
-    display -ms-flex
+    display -ms-flexbox
   display arg
